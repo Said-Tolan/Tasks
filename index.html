@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-controls">
+            <button id="themeBtn" class="theme-btn">🌙 Dark Mode</button>
+            <button id="languageBtn" class="language-btn">🌐 EN</button>
+        </div>
+        <h1>Task Manager</h1>
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <button id="addTask">Add Task</button>
+            <button id="aiHelper" class="ai-btn">🤖 AI Help</button>
+        </div>
+        <div id="aiSuggestions" class="ai-suggestions"></div>
+        <div class="task-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
